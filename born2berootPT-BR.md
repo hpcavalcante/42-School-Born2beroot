@@ -17,5 +17,5 @@
 </p>
 
 <p align=center>
-  Debian também é conhecida por ser uma distribuição estável, recebendo atualizações em sua versão stable apenas após terem sido exaustivamente testadas e por um longo tempo. O que também a torna uma escolha popular para servidores.
+  Debian também é conhecida por ser uma distribuição estável, recebendo atualizações em sua versão stable apenas após terem sido exaustivamente testadas e por um longo período de tempo. O que também a torna uma escolha popular para servidores.
 </p>

@@ -8,7 +8,7 @@ In my case I choose Debian. <b> So this following tutorial is only for a Debian 
 
 ### Mandatory:
 > 1. Choose between two Linux-based distribuitions: `CentOs` or `Debian`.
-> 2. Create, understand the concept about `LVM` partitions and encrypted partitions.
+> 2. Create and understand the concept about `LVM` partitions and encrypted partitions (For the mandatory part we have to create at least 2 ecrypted partitions using LVM).
 > 3. Install and configure `SSH services` for running on specific ports.
 > 4. Configure `UFW firewall` to allow only specifics connections to your server.
 > 5. Set-up hostnome and a strong password policy for users.

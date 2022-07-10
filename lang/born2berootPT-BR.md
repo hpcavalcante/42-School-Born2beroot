@@ -60,6 +60,11 @@ Depois de selecionar o disco que iremos particionar, chegaremos nos esquemas de 
 Crie uma passphrase forte para as partições encriptadas e anote em algum lugar. Isto será pedido sempre que iniciar o sistema. 
 Como nossa máquina virtual e o disco criado para ser usada nela tem o único propósito de ser usado neste projeto é seguro dizer que você deve usar o máximo do disco para o particionamento.
 
+Nesta parte de particionamento utilizamos o <b>Logical Volume Manager</b> ou LVM e é importante que se saiba o que é e porque o utlizamos nestre projeto.
+
+### LVM
+> Logical Volume Manager ou traduzido como Gerenciador de Volumes Lógicos, o nosso LVM, é um sistema para mapear e gerenciar memória de volumes de disco.
+
 Após estas configurações é só esperar a instalaçãdo sistema base no disco.
 
 Quando chegarmos nesta parte da instalação é importante que você desmarque todas as opções selecionadas com asterístico antes de clicar em Continue (Utilize o espaço para selecionar/deselecionar uma opção).

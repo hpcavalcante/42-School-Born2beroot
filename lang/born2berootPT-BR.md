@@ -72,11 +72,13 @@ Após estas configurações é só esperar a instalação do sistema base no dis
 
 Quando chegarmos nesta parte da instalação é importante que você desmarque todas as opções selecionadas com asterístico antes de clicar em Continue (Utilize o espaço para selecionar/deselecionar uma opção).
 
-_Não podemos instalar nenhum tipo de desktop environment!!!_
+_**Não podemos instalar nenhum tipo de desktop environment!!!**_
+
 ![Captura de tela 2022-07-10 064455](https://user-images.githubusercontent.com/97175725/178139591-b070aa26-42a3-4ed1-a396-227e91febc83.png)
 
 Instale o GRUB boot loader.
 <a href="https://e-tinet.com/linux/grub/">O que é GRUB?</a>
 
-Agora nossa instalação está completa! A máquina ira reiniciar sozinha e aparecerá o GRUB, basta apertar Enter (Ou aguardar alguns segundos que automaticamente ira confirmar a opção selecionada) na já selecionada opção Debian e o nosso sistema irá iniciar.
+Agora nossa instalação está completa! A máquina ira reiniciar sozinha e aparecerá o GRUB, basta apertar Enter (Ou aguardar alguns segundos que automaticamente ira confirmar a opção selecionada) e o nosso sistema irá iniciar.
+
 

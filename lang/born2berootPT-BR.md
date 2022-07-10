@@ -63,9 +63,12 @@ Como nossa máquina virtual e o disco criado para ser usada nela tem o único pr
 Nesta parte de particionamento utilizamos o <b>Logical Volume Manager</b> ou LVM e é importante que se saiba o que é e porque o utlizamos nestre projeto.
 
 ### LVM
-> Logical Volume Manager ou traduzido como Gerenciador de Volumes Lógicos, o nosso LVM, é um sistema para mapear e gerenciar memória de volumes de disco.
+> **Logical Volume Manager** ou traduzido como Gerenciador de Volumes Lógicos, o nosso LVM, é um sistema para mapear e gerenciar memória de volumes de disco. Ela vem presente nos sistemas baseados no Kernel Linux e é um sistema mais flexível de lidar com os seus discos. Por exemplo, o sistema padrão de particionamento é limitado a criação de apenas 4 partições, com o LVM esta limitação não existe para a criação de volumes lógicos. Também podemos facilmente redimensionar esses volumes lógicos de acordo com a nossa necessidade. 
+> Com a LVM os volumes físicos (Do nosso hardware) são combinados em _grupos de volume lógico_. Exceção a partição /boot/ que não pode estar em um grupo de volume lógico porque o gestor de inicialização não pode acessá-lo. Abaixo conceitos importantes para entender a LVM e como funciona.
+- > **Grupo de volume lógico:** O grupo de volume lógico é dividido entre volumes lógicos, cada um pode ser atribuído seu ponto de montagem e seu tipo de sistema de arquivos. Quando um volume lógico atinge sua capacidade total, é possível adicionar espaço livre do grupo de volume lógico a este volume lógico e aumentar o seu tamanho. Se um novo disco rígido físico for adicionado ao sistema, ele pode ser adicionado ao grupo de volume lógico e os volumes lógicos contidos no grupo podem ser expandidos com o novo espaço livre. Tornando assim um sistema bem flexível e de fácil administração para seus discos.
+- > **Volumes lógicos:** O correspondente as partições. Mas diferente delas, volumes lógicos podem utilizar de multiplos discos e não precisam estar físicamente contidos no mesmo disco.
 
-Após estas configurações é só esperar a instalaçãdo sistema base no disco.
+Após estas configurações é só esperar a instalação do sistema base no disco.
 
 Quando chegarmos nesta parte da instalação é importante que você desmarque todas as opções selecionadas com asterístico antes de clicar em Continue (Utilize o espaço para selecionar/deselecionar uma opção).
 

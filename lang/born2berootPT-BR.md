@@ -85,7 +85,8 @@ Agora nossa instalação está completa! A máquina ira reiniciar sozinha e apar
 
 Feita a instalação a primeira coisa que é pedida é a nossa passphrase para descriptografar nosso disco e podermos acessá-lo. Após isso será pedido para que digite o nome do usuário. Nesta primeira fase podemos começar usando o usuário `root` já que isso agilizará alguns processos de configurações que devemos fazer. Depois de digitar `root` como nome de usuário e em seguida a sua senha, estaremos logados no sistema.
 
-Assim que você conseguir logar no sistema é bom que cheque se tudo foi feito de acordo como por exemplo o nosso esquema de partições:
+Assim que você conseguir logar no sistema é bom que cheque se tudo foi feito de acordo, como por exemplo o nosso esquema de partições:
+
 - `lsblk` - para checar o esquema de partições
 
 ## Gereciador de Pacotes

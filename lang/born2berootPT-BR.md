@@ -81,4 +81,13 @@ Instale o GRUB boot loader.
 
 Agora nossa instalação está completa! A máquina ira reiniciar sozinha e aparecerá o GRUB, basta apertar Enter (Ou aguardar alguns segundos que automaticamente ira confirmar a opção selecionada) e o nosso sistema irá iniciar.
 
+## Entrando no sistema
+
+Feita a instalação a primeira coisa que é pedida é a nossa passphrase para descriptografar nosso disco e podermos acessá-lo. Após isso será pedido para que digite o nome do usuário, nesta primeira fase podemos começar usando o usuário `root` já que isso agilizará alguns processos de configurações que devemos fazer. Depois de digitar `root` como nome de usuário e em seguida a sua senha, estaremos logados no sistema.
+
+Assim que você conseguir logar no sistema é bom que cheque se tudo foi feito de acordo como por exemplo o nosso esquema de partições:
+- `lsblk` - para checar o esquema de partições
+
+## Gereciador de Pacotes
+
 

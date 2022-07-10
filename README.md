@@ -25,7 +25,7 @@ In my case I choose Debian. <b> So this following tutorial is only for a Debian 
 >
 > <h4><b>
 >  <span> • </span>
->	<a href="/born2berootPT-BR.md">Português Brasileiro</a>
+>	<a href="lang/born2berootPT-BR.md">Português Brasileiro</a>
 >  <br>
 >  <br>
 >  <span> • </span>

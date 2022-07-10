@@ -42,13 +42,33 @@ Selecione a sua máquina virtual, clique em configurações, clique em armazenam
 ![Captura de tela 2022-07-10 060515](https://user-images.githubusercontent.com/97175725/178138463-0013bd68-4d04-46a3-b1bb-53b2f35c0363.png)
 
 Feito isso, volte ao programa e clique em Iniciar para iniciar a nossa máquina virtual.
-Se tudo tiver sido feito de maneira correta a maquina devera iniciar dando boot no Debian e aparecendo suas opções de instalação.
+Se tudo tiver sido feito de maneira correta a máquina devera iniciar dando boot no Debian e aparecendo suas opções de instalação.
 
 ![Captura de tela 2022-07-10 061302](https://user-images.githubusercontent.com/97175725/178138658-6af7b24b-6b83-490d-b180-8f06d48a351f.png)
 
-Selecione a segunda opção (Install). Como não é permitido a instalação de servidores gráficos ou qualquer ambiente de desktop, usando apenas a opção Install certificaremos que não instalaremos nada a mais do que precisamos.
+Selecione a segunda opção (Install). _Como não é permitido a instalação de servidores gráficos ou qualquer ambiente de desktop, usando apenas a opção Install certificaremos que não instalaremos nada a mais do que precisamos._
 
 A primeira coisa a se fazer é escolher uma linguagem para o sistema e para o processo de instalação. Eu utilizei a linguagem que vem por padrão e deixei em inglês. Após isso tera algumas telas de configuração de região e keymap. A keymap é importante que você selecione o layout correto do seu teclado para não ter problemas futuros, neste caso escolhi o keymap de português.
 
-Agora aparecerá a tela de hostname, de acordo com a guideline do projeto você devera usar um hostname específico. Mas como podemos trocar isso após a instalação e deveremos saber como fazer, pode ser útil em termos de aprendizado deixar o que vem por padrão e aprender a trocar o hostname para o que é pedido após a instalação. O mesmo processo vale para nomes de usuário e senhas durante esta pré configuração. Tendo isto em mente, deixei tudo por padrão, selecionei nomes e senhas fáceis de usar e lembrar. Vou seguir com a régua pedida pelo projeto no pós da instalação.
+Agora aparecerá a tela de hostname, de acordo com a guideline do projeto você devera usar um hostname específico. Mas como podemos trocar isso após a instalação e deveremos saber como fazer, pode ser útil em termos de aprendizado deixar o que vem por padrão e aprender a trocar o hostname para o que é pedido após a instalação. O mesmo processo vale para nomes de usuário e senhas durante esta pré configuração. Tendo isto em mente, deixei tudo por padrão, selecionei nomes e senhas fáceis de usar e lembrar. E seguirei com a régua pedida pelo projeto no pós da instalação.
+
+### Particionamento
+
+Ainda dentro da instalação, precisaremos particionar o nosso disco. De acordo com o pedido pela guideline do projeto, deveremos fazer isso usando o `LVM` e criando ao menos 2 partições criptografadas (Mandatory). Se já tiver alguma experiência com particionamento pode se aventurar em usar o modo manual e criar as partições uma a uma. Para nos salvar alguem tempo basta selecionar a 3ª opção `Guided - use entire disk and set up encrypted LVM`.
+
+Depois de selecionar o disco que iremos particionar, chegaremos nos esquemas de particionamento. Caso esteja fazendo apenas o mandatório basta selecionar `Separate /home partition`. Caso esteja fazendo o bônus selecione a última opção `Separate /home, /var, and /tmp partitions`. 
+Crie uma passphrase forte para as partições encriptadas e anote em algum lugar. Isto será pedido sempre que iniciar o sistema. 
+Como nossa máquina virtual e o disco criado para ser usada nela tem o único propósito de ser usado neste projeto é seguro dizer que você deve usar o máximo do disco para o particionamento.
+
+Após estas configurações é só esperar a instalaçãdo sistema base no disco.
+
+Quando chegarmos nesta parte da instalação é importante que você desmarque todas as opções selecionadas com asterístico antes de clicar em Continue (Utilize o espaço para selecionar/deselecionar uma opção).
+
+_Não podemos instalar nenhum tipo de desktop environment!!!_
+![Captura de tela 2022-07-10 064455](https://user-images.githubusercontent.com/97175725/178139591-b070aa26-42a3-4ed1-a396-227e91febc83.png)
+
+Instale o GRUB boot loader.
+<a href="https://e-tinet.com/linux/grub/">O que é GRUB?</a>
+
+Agora nossa instalação está completa! A máquina ira reiniciar sozinha e aparecerá o GRUB, basta apertar Enter (Ou aguardar alguns segundos que automaticamente ira confirmar a opção selecionada) na já selecionada opção Debian e o nosso sistema irá iniciar.
 

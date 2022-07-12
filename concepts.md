@@ -13,8 +13,11 @@ Kernel Linux based operate systems.
 > **Partitions Basic**
 
 > **LVM**
+>- Volume Group
+>- Logical Volume
 
 > **Hostname**
+
 ## Apt, Apptitude and APPArmor
 > **APT**
 

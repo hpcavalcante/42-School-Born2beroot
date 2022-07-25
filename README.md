@@ -36,7 +36,7 @@ This project requires the student to configure a working virtual machine to serv
     - [The purpose of virtual machines](#the-purpose-of-virtual-machines)
     - [APT/Aptitude](#aptaptitude)
     - [APPArmor](#apparmor)
-    - [How to check service's status](#how-to-check-services-status)
+    - [How to check services status](#how-to-check-services-status)
     - [Users and groups](#users-and-groups)
     - [Passwords security](#passwords-security)
 
@@ -58,7 +58,7 @@ This project requires the student to configure a working virtual machine to serv
 ### APPArmor
 > It is a kernel security layer responsible for managing permissions for applications in terms of the use of machine resources. Like network access, permition to write, read or execute in disk and access of the general resources of the machine. 
 
-### How to check service's status
+### How to check services status
 > To check the status of a service on Debian, we can run the command `sudo systemctl status <nameofservice>`. The `systemctl` command is a handler for systemd, which is a handler for almost everything on Linux. We can check service status, stop services from running, start services and use for many other things.
 
 ### Users and groups

@@ -4,7 +4,7 @@ In this project we have to create our own virtual machine and set up as a server
 You must choose as an operating system either the latest stable version of Debian (no
 testing/unstable), or the latest stable version of CentOS.
 
-In my case I choose Debian.
+In my case I chose Debian.
 
 ## Mandatory:
 > 1. Choose between two Linux-based distribuitions: `CentOs` or `Debian`.

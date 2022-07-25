@@ -25,21 +25,20 @@ In my case I choose Debian.
 This project requires the student to configure a working virtual machine to serve as a server. There are many step by step tutorials on the internet for this. In my case I chose to focus only on the concepts of this project with brief explanations. To really understand these concepts, start here and look for more information.
 
 ## Index
-- How virtual machines works
-- The choose of operational system
-- CentOS/Debian
-- The purpose of virtual machines
-- APT/Aptitude
-- APPArmor
-- How to check service's status
-- Users and Groups
-- Passwords security
-- Hostname
-- Partitions and LVM
-- SUDO
-- UFW
-- SSH
-- CRON
+- [Born2beroot](#born2beroot)
+  - [Mandatory:](#mandatory)
+  - [Bonus part:](#bonus-part)
+  - [Concepts](#concepts)
+  - [Index](#index)
+    - [How virtual machine works](#how-virtual-machine-works)
+    - [The choose of operational system](#the-choose-of-operational-system)
+    - [CentOS/Debian](#centosdebian)
+    - [The purpose of virtual machines](#the-purpose-of-virtual-machines)
+    - [APT/Aptitude](#aptaptitude)
+    - [APPArmor](#apparmor)
+    - [How to check service's status](#how-to-check-services-status)
+    - [Users and groups](#users-and-groups)
+    - [Passwords security](#passwords-security)
 
 ### How virtual machine works
 > A virtual machine allows your system to run a entire operational system inside your host OS. The hypervisor is responsible to manage and share the resources of your physical machine beetwen your host OS and your virtual machines.

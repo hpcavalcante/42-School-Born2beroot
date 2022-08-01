@@ -39,6 +39,13 @@ This project requires the student to configure a working virtual machine to serv
     - [How to check services status](#how-to-check-services-status)
     - [Users and groups](#users-and-groups)
     - [Passwords security](#passwords-security)
+    - [Hostname](#hostname)
+    - [Partitions and LVM](#partitions-and-lvm)
+    - [SUDO](#sudo)
+    - [SSH](#ssh)
+    - [UFW](#ufw)
+    - [CRON](#cron)
+    - [SCRIPT](#script)
 
 ### How virtual machine works
 > A virtual machine allows your system to run a entire operational system inside your host OS. The hypervisor is responsible to manage and share the resources of your physical machine beetwen your host OS and your virtual machines.
@@ -71,3 +78,25 @@ This project requires the student to configure a working virtual machine to serv
 > - To check all users in system we can use `cat /etc/passwd`
 
 ### Passwords security
+> Passwords in this project must follow strict rules. For this we must install the package called pwquality (`sudo apt install libpwquality-common`), which allows us to define some rules for creating passwords. And we have to edit the `/etc/login.defs` file to define password expiration rules. After installing pwquality we have to edit the configuration file in `/etc/security/pwquality.conf`.
+
+### Hostname
+> Hostname is the name of machine in our network. In subject is required to hostname is your intra login + 42 (e.g: intralogin42)
+
+### Partitions and LVM
+> The name is an acronym for logical volume manager. And this volume manager allows greater flexibility when creating partitions (logical volumes) and managing them. System admin can easily manage free space from one volume to another as needed, add new physical volumes to a logical volume group and increase their capacity without formatting and losing data.
+
+### SUDO
+> In this project we will have to create specific rules for the use of SUDO. Sudo is a program that allows an ordinary user to have superuser (root) powers for a certain period of time. So the system admin can manage user permissions more securely, giving this power or taking it away. Rules for sudo can be defined in a new file created in `/etc/sudoers.d/`. As the project asks, create a log file in `/var/log/sudo/`. The path to this file must be specified in the configuration file created earlier. We must also add the user created during the evaluation to the sudo group, so that he also has the permission to use SUDO and have root powers. (e.g sudo adduser user sudo).
+
+### SSH
+> Security protocol that allows data exchange between server and client using a simple and secure connection. It prevents the data exchanged between the parties from being exposed or corrupted by third parties. Using an encryption method making it possible to access this data only by the authorized client and server. We have to be sure that the only port used for ssh conections is the 4242 port, to do that we can verify and edit it in `/etc/ssh/sshd_config`.
+
+### UFW
+> UFW is simply the system's firewall, it allows the creation of incoming and outgoing rules over the network. It is through it that we will configure the system to allow the only way to access the system through the network is through port 4242.
+
+### CRON
+> It is a task scheduler that allows you to schedule tasks to run in a certain period of time. It is important to know that cron creates different profiles for each user. We can edit the current user's profile via `crontab -e`.
+
+### SCRIPT
+> Using the system's own command output and some log files, you can create a shell script with outputs using `echo`. It is also important that you "format" these outputs to show only what was requested by the pdf. Redirections through the pipe "|" for commands like `awk` can be useful to do this.

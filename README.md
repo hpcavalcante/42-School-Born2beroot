@@ -76,7 +76,7 @@ This project requires the student to configure a working virtual machine to serv
 > Passwords in this project must follow strict rules. For this we must install the package called pwquality (`sudo apt install libpwquality-common`), which allows us to define some rules for creating passwords. And we have to edit the `/etc/login.defs` file to define password expiration rules. After installing pwquality we have to edit the configuration file in `/etc/security/pwquality.conf`.
 
 ### Hostname
-> Hostname is the name of machine in our network. In subject is required to hostname is your intra login + 42 (e.g: intralogin42)
+> Hostname is the name of our machine on the network. In this project it is required that our hostname be your intra login + 42. (e.g: intralogin42).
 
 ### Partitions and LVM
 > The name is an acronym for logical volume manager. And this volume manager allows greater flexibility when creating partitions (logical volumes) and managing them. System admin can easily manage free space from one volume to another as needed, add new physical volumes to a logical volume group and increase their capacity without formatting and losing data.
